@@ -13,6 +13,14 @@ CarbonCompass estimates your annual emissions, shows where you actually stand
 against global and climate-target benchmarks, and hands you three concrete actions
 ordered by how much carbon they remove — not generic advice.
 
+## 🚀 Live demo
+
+**[https://carboncompass-743502904048.us-central1.run.app](https://carboncompass-743502904048.us-central1.run.app)**
+
+Deployed on **Google Cloud Run**. The live instance runs with the cloud
+integrations disabled, so insights are served by the deterministic rule engine
+(the AI path is identical — see §2).
+
 ---
 
 ## 1. Chosen vertical
