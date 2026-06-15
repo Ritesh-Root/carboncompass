@@ -121,14 +121,37 @@ function AppContent() {
       {/* ------------------------------------------------------------------ */}
       {step === 'form' && (
         <div className="border-b border-gray-200 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-center">
-            <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-3">
-              What's your carbon footprint?
-            </h1>
-            <p className="text-gray-500 text-base max-w-xl mx-auto leading-relaxed">
-              Enter your lifestyle data to estimate your annual CO₂e emissions, compare against
-              global benchmarks, and get AI-powered actions to reduce it.
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-600 mb-3">
+              Personal carbon footprint
             </p>
+            <h1 className="text-3xl sm:text-[2.6rem] font-bold text-gray-900 max-w-2xl leading-[1.1]">
+              Know your number.
+              <br className="hidden sm:block" /> Then bring it down.
+            </h1>
+            <p className="text-gray-500 text-base max-w-2xl mt-4 leading-relaxed">
+              Answer a few questions about how you travel, power your home, eat, and shop.
+              CarbonCompass turns it into a yearly CO₂e estimate — and three actions that cut the
+              most.
+            </p>
+            <dl className="flex flex-wrap gap-x-10 gap-y-3 mt-7">
+              <div>
+                <dt className="text-xs text-gray-400">Global average</dt>
+                <dd className="text-lg font-semibold text-gray-900 tabular-nums">
+                  4,000 <span className="text-sm font-normal text-gray-400">kg/yr</span>
+                </dd>
+              </div>
+              <div className="sm:border-l sm:border-gray-200 sm:pl-10">
+                <dt className="text-xs text-gray-400">Paris 1.5°C target</dt>
+                <dd className="text-lg font-semibold text-gray-900 tabular-nums">
+                  2,000 <span className="text-sm font-normal text-gray-400">kg/yr</span>
+                </dd>
+              </div>
+              <div className="sm:border-l sm:border-gray-200 sm:pl-10">
+                <dt className="text-xs text-gray-400">Your estimate</dt>
+                <dd className="text-lg font-semibold text-primary-600">~30 seconds</dd>
+              </div>
+            </dl>
           </div>
         </div>
       )}
